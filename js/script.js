@@ -1,6 +1,6 @@
 const fibonacciNo = document.getElementById('fibonacciNo');
 const result = document.getElementById('result');
 
-const num = 10;
+const num = 8;
 fibonacciNo.innerHTML = num;
 result.innerHTML = 21;
