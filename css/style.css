@@ -1,15 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.fibonacci-sub-title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    color: #373A3C;
 }
 
 input::-webkit-outer-spin-button,
@@ -18,7 +10,13 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-#result {
+.container .form-inline .form-group .fibonacci-sub-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #373A3C;
+}
+
+.container .form-inline .form-group #result {
     margin: 0;
     font-weight: bold;
     text-decoration: underline;

@@ -1,24 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Project 1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="container p-5 mt-3">
+    <div class="container pl-0 mt-5">
         <h1>Fibonacci Calculator</h1>
         <form class="form-inline w-50">
             <div class="form-group">
                 <p class="fibonacci-sub-title">The Fibonaccin Of</p>
             </div>
             <div class="form-group mb-3 col-3">
-                <input type="number" id="inputNumber" class="form-control w-100" placeholder="#">
+                <input type="number" id="position" class="form-control w-100" placeholder="#">
             </div>
             <div class="form-group">
                 <button type="submit" id="submit" class="btn btn-primary mb-3">Is</button>
@@ -28,7 +29,6 @@
             </div>
         </form>
     </div>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

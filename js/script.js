@@ -1,16 +1,9 @@
-const submitButton = document.getElementById('submit');
-const resultSpan = document.getElementById('result');
 let temp1;
 let temp2;
 let next;
 
-function initTemp() {
-    temp1 = 0;
-    temp2 = 1;
-}
-
-function calculateFibonacci(x) {
-    for (let i = 0; i < x; i++) {
+function calculateFibonacci(num) {
+    for (let i = 0; i < num; i++) {
         next = temp1 + temp2;
         temp1 = temp2;
         temp2 = next;
@@ -19,12 +12,19 @@ function calculateFibonacci(x) {
     return temp1;
 }
 
-function getInputNumber(e) {
-    e.preventDefault();
-    initTemp();
-    const inputNumber = document.getElementById('inputNumber').value;
-    const result = calculateFibonacci(inputNumber);
-    resultSpan.innerHTML = result;
+const submit = document.getElementById('submit');
+const result = document.getElementById('result');
+
+function fibonacci(event) {
+    event.preventDefault();
+
+    temp1 = 0;
+    temp2 = 1;
+
+    const positionNum = document.getElementById('position').value;
+    const resultNum = calculateFibonacci(positionNum);
+
+    result.innerHTML = resultNum;
 }
 
-submitButton.addEventListener('click', getInputNumber);
+submit.addEventListener('click', fibonacci);
