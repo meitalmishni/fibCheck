@@ -41,3 +41,10 @@ const fibonacci = async (event) => {
 }
 
 submit.addEventListener('click', fibonacci);
+
+document.getElementById('position').addEventListener('keyup', function () {
+    document.getElementById('position').classList.remove('error');
+    document.getElementById('error50').classList.add('hideError');
+    result.innerHTML = '';
+    serverError.innerHTML = '';
+})
