@@ -21,3 +21,31 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
     text-decoration: underline;
 }
+
+.alert-danger {
+    width: 180px;
+    height: 33px;
+    left: 11.5%;
+}
+
+.alert-danger p {
+    color: #A94442;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    width: 176.59px;
+    height: 14.4px;
+    left: 9px;
+    position: absolute;
+}
+
+.error {
+    border: 1px solid #D9534F !important;
+    color: #D9534F !important;
+}
+
+.hideError {
+    display: none;
+}
