@@ -22,17 +22,14 @@ const calculateFibonacci = async (url) => {
 
 const fibonacci = async (event) => {
     event.preventDefault();
+    submit.blur();
 
     const positionNum = document.getElementById('position').value;
-
-    result.innerHTML = '';
-    serverError.innerHTML = '';
 
     if (positionNum > 50) {
         //console.log('more than 50');
         document.getElementById('position').classList.add('error');
         document.getElementById('error50').classList.remove('hideError');
-        submit.blur();
         return false;
     }
 
@@ -44,10 +41,3 @@ const fibonacci = async (event) => {
 }
 
 submit.addEventListener('click', fibonacci);
-
-document.getElementById('position').addEventListener('keyup', function () {
-    document.getElementById('position').classList.remove('error');
-    document.getElementById('error50').classList.add('hideError');
-    result.innerHTML = '';
-    serverError.innerHTML = '';
-})
