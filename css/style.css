@@ -23,14 +23,18 @@ input::-webkit-inner-spin-button {
 }
 
 .container .form-inline .error {
-    border: 1px solid #D9534F !important;
-    color: #D9534F !important;
+    border: 1px solid #D9534F;
+    color: #D9534F;
+    border-radius: 4px;
 }
 
 .container .alert-danger {
     width: 180px;
     height: 33px;
     left: 11.5%;
+    background: #F2DEDE;
+    border: 1px solid #EBCCCC;
+    border-radius: 4px;
 }
 
 .container .alert-danger p {
