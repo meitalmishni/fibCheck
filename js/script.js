@@ -24,6 +24,9 @@ const fibonacci = async (event) => {
     event.preventDefault();
     submit.blur();
 
+    result.innerHTML = '';
+    serverError.innerHTML = '';
+
     const positionNum = document.getElementById('position').value;
 
     if (positionNum > 50) {
@@ -47,4 +50,4 @@ document.getElementById('position').addEventListener('keyup', function () {
     document.getElementById('error50').classList.add('hideError');
     result.innerHTML = '';
     serverError.innerHTML = '';
-})
+});
